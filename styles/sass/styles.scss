@@ -1,0 +1,10 @@
+@import 'setup';
+@import 'variables';
+@import 'global';
+
+@import 'navFooter';
+@import 'index';
+@import 'works';
+
+@import './mediaQueries/mediaQPageIndex';
+@import './mediaQueries/mediaQPageWorks';

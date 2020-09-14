@@ -1,0 +1,98 @@
+// Stripping Style
+
+html {
+    font-size: 62.5%;
+}
+
+body,
+button {
+    font-family: $secondaryFont;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+input,
+textarea {
+    background: none;
+    border: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+// General Styles
+
+h1 {
+    @include font($primaryFont, 5rem, $white);
+}
+
+h2 {
+    @include font($secondaryFont, 4rem, $white);
+}
+
+h3 {
+    @include font($secondaryFont, 5rem, $primaryColor);
+    text-shadow: 2px 3px $white, 4px 5px $tertiaryColor;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+h3.alternateHeading {
+    @include font($secondaryFont, 5rem, $white);
+    -webkit-text-stroke: 1px $primaryColor;
+    text-shadow: 2px 3px $white, 4px 5px $tertiaryColor;
+    
+}
+
+h4 {
+    @include font($primaryFont, 3rem, $primaryColor);
+    padding-bottom: 2rem;
+}
+
+p {
+    @include font($secondaryFont, 1.6rem, $black);
+    padding-bottom: 2rem;
+}
+
+section {
+    padding: 100px 0;
+}
+
+a {
+    @include font($secondaryFont, 2rem, $secondaryColor);
+}

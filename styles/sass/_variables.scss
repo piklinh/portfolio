@@ -1,0 +1,15 @@
+$primaryColor: #769fcd;
+$secondaryColor: #b9d7ea;
+$tertiaryColor: #d6e6f2;
+$fourthColor: #f7fbfc;
+$black: #696969;
+$white: #FFFFFF;
+
+$primaryFont: 'Arvo', serif;
+$secondaryFont: 'Lato', sans-serif;
+
+@mixin font($fontFamily, $fontSize, $fontColor) {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $fontColor;
+}
