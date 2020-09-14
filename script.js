@@ -20,12 +20,21 @@ portfolio.hamburgerMenu = () => {
     })
 }
 
+portfolio.carousel = () => {
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true
+    });
+}
+
 // Initiate the app
 portfolio.init = () => {
     AOS.init();
     portfolio.typeEffect();
     portfolio.parallax();
     portfolio.hamburgerMenu();
+    portfolio.carousel();
 }
 
 // Document ready - load HTML/CSS, then initialize JQ!
