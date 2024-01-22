@@ -1,0 +1,82 @@
+section.company {
+    padding: 100px 0 0 0;
+}
+
+section.tasks {
+    padding: 0;
+}
+
+.contentBrief {
+    padding: 10px;
+    background-color: $white;
+}
+
+.accordion {
+    max-width: 100%;
+    padding: 15px 0px;
+}
+
+.accordion .accordionBox {
+    position: relative;
+    margin: 10px 0px;
+}
+
+.accordion .accordionBox .label {
+    position: relative;
+    background-color: $primaryColor;
+    cursor: pointer;
+    padding: 15px;
+
+    &:hover {
+        background-color: darken($primaryColor, 20);
+    }
+}
+
+.accordion .accordionBox .label p {
+    color: $white;
+    font-size: 1.6rem;
+}
+
+.accordion .accordionBox .label::before {
+    content: '+';
+    position: absolute;
+    top: 25%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 4rem;
+    color: $primaryColor;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion .accordionBox.active .label::before {
+    content: '–';
+}
+
+.accordion .accordionBox .content {
+    position: relative;
+    background: $tertiaryColor;
+    height: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: 0.3s;
+    padding: 0px 15px;
+}
+
+.accordion .accordionBox.active .content {
+    height: fit-content;
+    padding: 15px;
+}
+
+.hlImage {
+    max-width: 90%;
+}
+
+.pHeader {
+    padding-bottom: 0rem;
+}

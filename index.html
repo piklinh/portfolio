@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Typed.js Link -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <!-- Favicon Link -->
-    <link rel="icon" type="image/png" href="./assets/logo.png">
+    <!-- Favicon Link --> 
+    <link rel="icon" type="image/png" href="./assets/main/logo.png">
 </head>
 
 <body id="pageIndex">
@@ -23,16 +23,22 @@
         <!-- Fixed Navigation -->
         <nav>
             <div class="wrapper">
-                <div class="toggle">
-                    <i class="fas fa-bars hamburger" aria-hidden="true" aria-label="Hamburger Menu"></i>
+
+                <div class="burgerContainer">
+                    <div class="burger" aria-hidden="true" aria-label="Hamburger Menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
                 </div>
+
                 <ul class="navContainer">
-                    <li><img class="logo" src="./assets/logo.png" alt="Pik Lin Logo"></li>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><img class="logo" src="./assets/main/logo.png" alt="Pik Lin Logo"></li>
+                    <li><a class="navLink" href="./index.html">Home</a></li>
+                    <li><a class="navLink" href="./index.html#about">About</a></li>
+                    <li><a class="navLink" href="./index.html#work">Work</a></li>
+                    <li><a class="navLink" href="./index.html#toolkit">Toolkit</a></li>
+                    <li><a class="navLink" href="./index.html#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -45,10 +51,11 @@
             </div>
             
             <div class="headerImage" id="butterfly">
-                <img class="butterfly" data-depth="2.5" src="./assets/butterfly.png" alt="Butterfly">
-                <img class="butterflyFlip" data-depth="0.5" src="./assets/butterflyflip.png" alt="Butterfly">
+                <img class="butterfly" data-depth="2.5" src="./assets/main/butterfly.png" alt="Butterfly">
+                <img class="butterflyFlip" data-depth="0.75" src="./assets/main/butterflyflip.png" alt="Butterfly">
             </div>
         </div>
+
     </header>
 
     <main>
@@ -61,30 +68,95 @@
 
                 <div class="aboutContainer">
                     <div class="aboutImage">
-                        <img class="profileImage" src="./assets/piklin.jpg" alt="Pik Lin">
+                        <img class="profileImage" src="./assets/main/piklin.jpg" alt="Pik Lin">
                     </div>
     
                     <div class="aboutTitle">
-                        <p>I am an editor turned <span class="blueHighlight">web developer</span> who is able to merge my experience in content creation to build web applications. With more than a decade of experience in copywriting, marketing and corporate communications, I have led creative teams in completing projects and achieving client goals.</p>
+                        <p>I am an editor turned <span class="blueHighlight">web developer</span> who is able to merge my experience in content creation to build web applications. With more than a decade of experience in copywriting, marketing and corporate communications, I have led creative teams in completing print and digital projects and achieving client goals.</p>
         
-                        <p>I'm meticulous and detailed while being able to strike a balance and gaze at the bigger picture. My prior work experience, now coupled with my new web development skills, adds to my abilities in completing tasks efficiently and effectively; something I pride myself on.</p>
+                        <p>I aim to design and develop semantic and accessible websites meeting WCAG 2.0 standards. I believe beautiful, functional and responsive designs are fundamental when creating quality projects.</p>
                             
-                        <p>I've specialized in the career and education industries and am an advocate of lifelong learning, as evidenced by my continuous journey of self-improvement. I also have a Master of World Literature, with way too many books.</p>
+                        <p>I specialize in the education and e-commerce industries and am an advocate of lifelong learning, as evidenced by my continuous journey of self-improvement. I also have a Master of World Literature and have a cat.</p>
 
-                        <a href="https://drive.google.com/file/d/16BH9Y9kTrk7D4TjzBom46e30iKO03g0D/view?usp=sharing" class="downloadButton" target="_blank">Download CV</a>
+                        <a href="https://drive.google.com/file/d/1pCLNMvPLsQIPciQFwQK2V1HLyTCoe2n0/view?usp=sharing" class="buttonLink" target="_blank">Download CV</a>
                     </div>
                 </div>
             </div>
         </section>
         <!-- END: Index: About -->
 
-        <!-- START: Index: Skills -->
-        <section class="skills" id="skills">
+        <!-- START: Index: Work -->
+        <section class="work" id="work">
             <div class="wrapper" data-aos="zoom-in" data-aos-duration="700">
-                <div class="skillTitle">
-                    <h3 class="alternateHeading">Skills</h3>
+                
+                <h3 class="altH3">Work</h3>
+                
+                <div class="workContainer">
+                    <div class="flexContainer">
+
+                        <div class="flexItem alignTxCen" data-aos="flip-left" data-aos-duration="1500">
+                            <a href="./thane.html">
+                                <div class="workImage">
+                                    <img src="./assets/main/logos/Logo_Thane_600x400.jpg" alt="Thane and Danoz Logos">
+                                </div>
+                            
+                                <div class="workDescription">
+                                    <h4 class="workTitle">Thane | Danoz</h4>
+                                    <p>Web Designer | Email Specialist</p></a>
+                                </div>
+                            
+                        </div>
+
+                        <div class="flexItem alignTxCen" data-aos="flip-right" data-aos-duration="1500">
+                            <a href="./help.html">
+                                <div class="workImage">
+                                    <img src="./assets/main/logos/Logo_HELP_600x400.jpg" alt="HELP University Logo">
+                                </div>
+
+                                <div class="workDescription">
+                                    <h4 class="workTitle">HELP University</h4>
+                                    <p>Assistant Manager, Corporate Communications</p></a>
+                                </div>
+                            
+                        </div>
+
+                        <div class="flexItem alignTxCen" data-aos="flip-left" data-aos-duration="1500">
+                            <a href="./gti.html">
+                                <div class="workImage">
+                                    <img src="./assets/main/logos/Logo_GTIMedia_600x400.jpg" alt="GTI Media Logo">
+                                </div>
+
+                                <div class="workDescription">
+                                    <h4 class="workTitle">GTI Media</h4>
+                                    <p>Editor</p></a>
+                                </div>
+                        </div>
+
+                        <div class="flexItem alignTxCen" data-aos="flip-right" data-aos-duration="1500">
+                            <a href="./personal.html">
+                                <div class="workImage">
+                                    <img src="./assets/main/logos/Logo_Personal_600x400.jpg" alt="Cat and mountain vectors in speech bubbles">
+                                </div>
+
+                                <div class="workDescription">
+                                    <h4 class="workTitle">Personal Projects</h4>
+                                    <p>App Development</p></a>
+                                </div>
+                        </div>
+
+                    </div>
                 </div>
-    
+
+            </div>
+        </section>
+        <!-- END: Index: Work -->
+
+        <!-- START: Index: Toolkit -->
+        <section class="toolkit" id="toolkit">
+            <div class="wrapper" data-aos="zoom-in" data-aos-duration="700">
+            
+                <h3>Toolkit</h3>
+                    
                 <div class="skillContainer">
                     <ul class="skillFlexContainer">
                         <li class="skillItem">
@@ -104,17 +176,21 @@
                             <p>jQuery</p>
                         </li>
                         <li class="skillItem">
-                            <i class="fab fa-sass" aria-hidden="true"></i>
-                            <p>SASS</p>
-                        </li>
-                        <li class="skillItem">
                             <i class="fab fa-react" aria-hidden="true"></i>
                             <p>React</p>
                         </li>
                         <li class="skillItem">
-                            <img class="iconImage" src="./assets/firebase.svg" alt="Firebase" aria-hidden="true">
-                            <p>Firebase</p>
+                            <img class="iconImage" src="./assets/main/logos/shopify.svg" alt="Shopify" aria-hidden="true">
+                            <p>Shopify</p>
                         </li>
+                        <li class="skillItem">
+                            <i class="devicon-wordpress-plain" aria-hidden="true"></i>
+                            <p>Wordpress</p>
+                        </li>
+                        <li class="skillItem">
+                            <img class="iconImage" src="./assets/main/logos/buyist.svg" alt="Buyist" aria-hidden="true">
+                            <p>Buyist</p>
+                        </li>                        
                         <li class="skillItem">
                             <i class="fas fa-cogs" aria-hidden="true"></i>
                             <p>RESTful API</p>
@@ -132,12 +208,8 @@
                             <p>Responsive design</p>
                         </li>
                         <li class="skillItem">
-                            <i class="devicon-visualstudio-plain" aria-hidden="true"></i>
-                            <p>VS Code</p>
-                        </li>
-                        <li class="skillItem">
-                            <i class="fas fa-terminal" aria-hidden="true"></i>
-                            <p>Command Line</p>
+                            <i class="devicon-figma-plain" aria-hidden="true"></i>
+                            <p>Figma</p>
                         </li>
                         <li class="skillItem">
                             <i class="devicon-photoshop-plain" aria-hidden="true"></i>
@@ -148,103 +220,20 @@
                             <p>Illustrator</p>
                         </li>
                         <li class="skillItem">
-                            <i class="fas fa-pen-fancy" aria-hidden="true"></i>
-                            <p>Copywriting</p>
+                            <i class="fa fa-solid fa-paper-plane" aria-hidden="true"></i>
+                            <p>Klaviyo</p>
                         </li>
                     </ul>
                 </div>
             </div>
         </section>
-        <!-- END: Index: Skills -->
-
-        <!-- START: Index: Projects -->
-        <section class="projects" id="projects">
-            <div class="wrapper">
-                <h3>Projects</h3>
-
-                <!-- PROJECT: Ghostwriter -->
-                <div class="projectContainer" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="projectImage">
-                        <img src="./assets/ghostwriter.png" alt="Ghostwriter App">
-                    </div>
-                    <div class="projectDescription">
-                        <h4>Ghostwriter</h4>
-                        <p>Have a taste for the macabre? Ghostwriter is a horror drabble app built with React and uses Firebase as a real-time database to store and display the user’s selected prompts and story input. Pick a horror prompt that you fancy and share your dark tale with us!</p>
-                        <p><span class="blueHighlight">React</span> | <span class="blueHighlight">Firebase</span> | <span class="blueHighlight">Javascript</span></p>
-
-                        <div class="projectLink">
-                            <a href="https://piklinh.github.io/ghostwriter/" class="projectLiveLink" target="_blank">Live Site</a>
-                            <a href="https://github.com/piklinh/ghostwriter" class="projectLiveLink" target="_blank">Github</a>
-                            <a href="https://drive.google.com/file/d/1QU9tAF9d7QELjjSaHo0tVvpvBuyfFUeu/view?usp=sharing" class="projectLiveLink" target="_blank">Style Guide</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PROJECT: The Book Nook -->
-                <div class="projectContainer" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="projectDescription projectDescRight">
-                        <h4>The Book Nook</h4>
-                        <p>Looking for books for your child? Check out The Book Nook, a children book app designed to provide book suggestions by drawing the latest lists from the New York Times Bestseller API. Refresh every week or two to get new book suggestions! Paired programming with Bart Yellapu.</p>
-                        <p><span class="blueHighlight">Javascript</span> | <span class="blueHighlight">jQuery</span> | <span class="blueHighlight">API</span> | <span class="blueHighlight">HTML5</span> | <span class="blueHighlight">CSS3</span> </p>
-
-                        <div class="projectLink">
-                            <a href="https://piklinh.github.io/thebooknook/" class="projectLiveLink" target="_blank">Live Site</a>
-                            <a href="https://github.com/piklinh/thebooknook" class="projectLiveLink" target="_blank">Github</a>
-                            <a href="https://drive.google.com/file/d/1oaZE_RP9QURjRRkGv_ICftetSgtP8WhK/view?usp=sharing" class="projectLiveLink" target="_blank">Style Guide</a>
-                        </div>
-                    </div>
-                    <div class="projectImage">
-                        <img src="./assets/booknook.png" alt="The Book Nook App">
-                    </div>
-                </div>
-
-                <!-- PROJECT: Vanity Fur -->
-                <div class="projectContainer" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="projectImage">
-                        <img src="./assets/vanityfur.png" alt="Vanity Fur App">
-                    </div>
-
-                    <div class="projectDescription">
-                        <h4>Vanity Fur</h4>
-                        <p>Ever wondered how cute your dog would look with a crown? Or your cat with a scarf? Accessorize without the hassles of bites and scratches; Vanity Fur is a dress-your-pet app built with Javascript and JQuery that allows the user to dress up their pet of choice with selected accessories. I created and designed the images for the pets and accessories.</p>
-                        <p><span class="blueHighlight">Javascript</span> | <span class="blueHighlight">jQuery</span> | <span class="blueHighlight">HTML5</span> | <span class="blueHighlight">CSS3</span> </p>
-
-                        <div class="projectLink">
-                            <a href="https://piklinh.github.io/vanityfur/" class="projectLiveLink" target="_blank">Live Site</a>
-                            <a href="https://github.com/piklinh/vanityfur" class="projectLiveLink" target="_blank">Github</a>
-                            <a href="https://drive.google.com/file/d/1LKb0-OPuoVwXOoCwSPWxcxSw4it9XLgJ/view?usp=sharing" class="projectLiveLink" target="_blank">Style Guide</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- PROJECT: Under The Sea -->
-                <div class="projectContainer" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="projectDescription projectDescRight">
-                        <h4>Under The Sea</h4>
-                        <p>A multi-page, fully responsive website based on a Photoshop design.</p>
-                        <p><span class="blueHighlight">Javascript</span> | <span class="blueHighlight">HTML5</span> | <span class="blueHighlight">CSS3</span> </p>
-
-                        <div class="projectLink">
-                            <a href="https://piklinh.github.io/underthesea/" class="projectLiveLink" target="_blank">Live Site</a>
-                            <a href="https://github.com/piklinh/underthesea" class="projectLiveLink" target="_blank">Github</a>
-                        </div>
-                    </div>
-
-                    <div class="projectImage">
-                        <img src="./assets/underthesea.png" alt="Under The Sea Website">
-                    </div>
-                </div>
-            
-            <!-- END: Project Wrapper -->
-            </div>
-
-        </section>
-        <!-- END: Index: Projects -->
-
+        <!-- END: Index: Toolkit -->
+        
         <!-- START: Index: Contact -->
         <section class="contact" id="contact">
             <div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
-                <h3 class="alternateHeading">Contact</h3>
+                
+                <h3 class="altH3">Contact</h3>
 
                 <div class="contactContainer">
                     <div class="contactNoteContainer">
@@ -254,12 +243,10 @@
 
                         <ul class="socialMediaContainer">
                             <li><a href="mailto:hoepiklin@gmail.com" target="_blank" class="socialMediaLink"><i class="fas fa-envelope socialMedia"></i><span class="srOnly">Email</span></a></li>
-                            <li><a href="https://twitter.com/hpiklin" target="_blank" class="socialMediaLink"><i class="fab fa-twitter socialMedia"></i><span class="srOnly">Twitter</span></a></li>
                             <li><a href="https://www.linkedin.com/in/pik-lin-hoe-6b3a2775/" target="_blank" class="socialMediaLink"><i class="fab fa-linkedin-in socialMedia"></i><span class="srOnly">LinkedIn</span></a></li>
                             <li><a href="https://github.com/piklinh" target="_blank" class="socialMediaLink"><i class="fab fa-github socialMedia"></i><span class="srOnly">Github</span></a></li>
                         </ul>
-
-                        <a href="https://calendly.com/piklinhoe/" class="meetingButton" target="_blank">Book a meeting</a>
+                        
                     </div>
                     
                     <div class="formContainer">

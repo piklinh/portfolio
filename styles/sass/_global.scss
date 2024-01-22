@@ -14,6 +14,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 ul,
 p {
     margin: 0;
@@ -66,14 +67,14 @@ h2 {
 }
 
 h3 {
-    @include font($secondaryFont, 5rem, $primaryColor);
+    @include font($secondaryFont, 4.5rem, $primaryColor);
     text-shadow: 2px 3px $white, 4px 5px $tertiaryColor;
     text-align: center;
     margin-bottom: 6rem;
 }
 
-h3.alternateHeading {
-    @include font($secondaryFont, 5rem, $white);
+h3.altH3 {
+    @include font($secondaryFont, 4.5rem, $white);
     -webkit-text-stroke: 1px $primaryColor;
     text-shadow: 2px 3px $white, 4px 5px $tertiaryColor;
     
@@ -81,6 +82,17 @@ h3.alternateHeading {
 
 h4 {
     @include font($primaryFont, 3rem, $primaryColor);
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+
+h5 {
+    @include font($secondaryFont, 2rem, $primaryColor);
+    padding-bottom: 2rem;
+}
+
+h5.altH5 {
+    @include font($secondaryFont, 2rem, $white);
     padding-bottom: 2rem;
 }
 
@@ -93,6 +105,92 @@ section {
     padding: 100px 0;
 }
 
+aside {
+    background-color: $tertiaryColor;
+    padding: 1.5rem;
+}
+
+aside p {
+    padding-bottom: 0rem;
+}
+
 a {
     @include font($secondaryFont, 2rem, $secondaryColor);
+}
+
+a.liveLink {
+    @include font($primaryFont, 1.6rem, $white);
+    padding: 10px 20px;
+    margin: 0 20px 20px 0;
+    background-color: $primaryColor;
+    border-radius: 5px;
+    box-shadow: 2px 2px $white, 4px 4px $tertiaryColor; 
+
+    &:hover {
+        background-color: darken($primaryColor, 10);
+    }
+
+    &:focus {
+        border: 2px solid darken($primaryColor, 20);
+    }
+}
+
+.flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.flexItem {
+    display: flex;
+    width: calc(100% / 2 - 2rem);
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 1rem 2rem;
+}
+
+.alignTxCen {
+    text-align: center;
+}
+
+.alignTxLeft {
+    text-align: left;
+}
+
+.mtb20 {
+    margin: 2rem 0;
+}
+
+.mt10 {
+    margin-top: 1rem;
+}
+
+.mt20 {
+    margin-top: 2rem;
+}
+
+button, 
+.buttonLink {
+    @include font($primaryFont, 1.6rem, $white);
+    background-color: $primaryColor;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: double 4px $white;
+
+    &:hover {
+        background-color: darken($primaryColor, 10);
+    }
+
+    &:focus {
+        border: solid 2px $primaryColor;
+    }
+}
+
+.video {
+    max-width: 90%;
+    width: 60rem;
+    margin: 2rem auto;
+    border-radius: 10px;
+    border: 0.5rem dashed $primaryColor;
 }
